@@ -1,0 +1,7 @@
+Reespaldo de la versión original, con el commit: 
+
+commit 735fc42dfe6b1c8648a41b2e1ad5431317f47993
+Author: captaincode0 <developerdiego0@gmail.com>
+Date:   Thu Dec 8 15:27:20 2016 -0600
+
+    Added client images for iteration four and five
