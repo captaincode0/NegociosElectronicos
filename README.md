@@ -20,6 +20,7 @@ Es una plataforma que facilita a los restaurantes la gestión de procesos, como 
 * Iteracion-3: Rama del producto mínimo viable de la tercera iteración.
 * Iteracion-4: Rama del producto mínimo viable de la cuarta iteración.
 * Iteracion-5: Rama del producto mínimo viable de la quinta iteración.
+* Iteracion-6: Rama del producto mínimo viable de la sexta iteración.
 
 ##Enlaces del proyecto
 * [Wiki de las iteraciones](https://github.com/captaincode0/NegociosElectronicos/wiki): En este apartado se muestran las iteraciones, los objetivos que se deben de cumplir en un intérvalo de fechas en específico.
