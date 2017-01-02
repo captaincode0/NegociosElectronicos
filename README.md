@@ -4,6 +4,7 @@ Es una plataforma que facilita a los restaurantes la gestión de procesos, como 
 
 ##Integrantes
 
+* Materia: Generación de Negocios Electrónicos.
 * Profesor: Ing. Miguel Ángel Gallardo Lemus.
 * Integrantes del equipo:
     1. De Santiago Ruiz Diego Alberto.
