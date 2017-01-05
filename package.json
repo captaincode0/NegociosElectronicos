@@ -1,0 +1,35 @@
+{
+  "name": "sinhambreapp",
+  "version": "0.0.1",
+  "description": "Sin hambre web application",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-sqlite3": "^0.9.9",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "jade": "^1.11.0",
+    "sqlite3": "^3.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/captaincode0/NegociosElectronicos.git"
+  },
+  "keywords": [
+    "sinhambre",
+    "food",
+    "reservations",
+    "beta"
+  ],
+  "author": "captancode0,ely,bcr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/captaincode0/NegociosElectronicos/issues"
+  },
+  "homepage": "https://github.com/captaincode0/NegociosElectronicos#readme"
+}
