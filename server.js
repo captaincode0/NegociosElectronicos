@@ -56,7 +56,10 @@ var appconfigurator = require("./SystemVariables");
 	app.use(bodyParser.json());
 	app.use(cookieParser());
 	app.use(ExpressSession({
-		store: new SQLiteStorage,
+		store: new SQLiteStorage({
+			db: "sinhambredb",
+			dir: "./db/"
+		}),
 		secret: secret_key,
 		resave: true,
 		cookie: {

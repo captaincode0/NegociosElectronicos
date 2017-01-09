@@ -1,6 +1,6 @@
 drop table if exists users;
 create table users (
-	id int primary key,
+	id integer primary key autoincrement,
 	name varchar(45) not null,
 	tel varchar(30) not null,
 	email varchar(60) not null,
@@ -10,7 +10,7 @@ create table users (
 
 drop table if exists restaurants;
 create table restaurants (
-	id int primary key,
+	id integer primary key autoincrement,
 	userid int not null,
 	name varchar(120) not null,
 	address varchar(80) not null,
@@ -22,7 +22,7 @@ create table restaurants (
 
 drop table if exists alerts;
 create table alerts (
-	id int primary key,
+	id integer primary key autoincrement,
 	userid int not null,
 	title varchar(120) not null,
 	body text not null,
@@ -31,21 +31,21 @@ create table alerts (
 
 drop table if exists menu;
 create table menu (
-	id int primary key,
+	id integer primary key autoincrement,
 	restaurantid int not null,
 	name varchar(60) not null
 );
 
 drop table if exists sections;
 create table sections (
-	id int primary key,
+	id integer primary key autoincrement,
 	menuid int not null,
 	name varchar(100) not null
 );
 
 drop table if exists menuitems;
 create table menuitems (
-	id int primary key,
+	id integer primary key autoincrement,
 	sectionid int not null,
 	name varchar(100) not null,
 	image text not null,
@@ -54,7 +54,7 @@ create table menuitems (
 
 drop table if exists orders;
 create table orders (
-	id int primary key,
+	id integer primary key autoincrement,
 	userid int not null,
 	total float(6,2) not null,
 	payed boolean not null default false
@@ -70,7 +70,7 @@ create table orderdetails (
 
 drop table if exists promotions;
 create table promotions (
-	id int primary key,
+	id integer primary key autoincrement,
 	userid int not null,
 	image text not null
 );
