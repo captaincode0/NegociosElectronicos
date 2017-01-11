@@ -22,32 +22,36 @@ class User{
 		return this.name;
 	}
 
-	setTel(tel){
-		this.tel = tel;
-	}
-
 	getTel(){
 		return this.tel;
 	}
 
-	setEmail(email){
-		this.email = email;
+	setTel(tel){
+		this.tel = tel;
 	}
 
 	getEmail(){
 		return this.email;
 	}
 
-	setPasswd(passwd){
-		this.passwd = passwd;
+	setEmail(email){
+		this.email = email;
 	}
 
 	getPasswd(){
 		return this.passwd;
 	}
 
+	setPasswd(passwd){
+		this.passwd = passwd;
+	}
+
 	getUserType(){
 		return this.usertype;
+	}
+
+	setUserType(usertype){
+		this.usertype = usertype;
 	}
 }
 

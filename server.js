@@ -29,9 +29,7 @@ var bodyParser = require("body-parser");
 //get the cookie parser to control user cookies
 var cookieParser = require("cookie-parser");
 
-//build the sqlite3 storage
-var SQLiteStorage = require("connect-sqlite3")(ExpressSession);
-
+var path = require("path");
 
 /**
  * captaincode0 libraries and modules
@@ -56,10 +54,6 @@ var appconfigurator = require("./SystemVariables");
 	app.use(bodyParser.json());
 	app.use(cookieParser());
 	app.use(ExpressSession({
-		store: new SQLiteStorage({
-			db: "sinhambredb",
-			dir: "./db/"
-		}),
 		secret: secret_key,
 		resave: true,
 		cookie: {
@@ -72,6 +66,9 @@ var appconfigurator = require("./SystemVariables");
 	"jade", 
 	"/views"
 );
+
+//set middleware for static files
+app.use("/assets/",express.static(path.join(__dirname+"/views/assets")));
 
 //index route
 app.use("/", require(appconfigurator.APP_ROUTES+"index"));

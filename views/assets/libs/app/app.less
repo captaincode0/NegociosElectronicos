@@ -1,16 +1,16 @@
 @orange: #ff9800;
 
-body {
+body{
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
 }
 
-.pacifico {
-	font-family: 'Pacifico', cursive;
+.sinhambre-font-pacifico{
+	font-family: "Pacifico", cursive;
 }
 
-.generalmenu{
+.sinhambre-app .sinhambre-menu{
 	background-color: white;
 	position: fixed;
 	top: 0;
@@ -19,156 +19,144 @@ body {
 	z-index: 55;
 }
 
-.generalmenu .brand {
+.sinhambre-app .sinhambre-menu .brand{
 	color: @orange;
 	text-decoration: none;
 }
 
-.generalmenu .button-collapse {
+.sinhambre-app .sinhambre-menu .button-collapse{
 	color: black;
+	z-index: 3;
 }
 
-.generalmenu h5 {
-	.pacifico;
+.sinhambre-app .sinhambre-menu h5{
+	.sinhambre-font-pacifico;
 }
 
-.generalmenu .nav-menu-icon {
+.sinhambre-app .sinhambre-menu .nav-menu-icon{
 	margin-right: 10px;
 	margin-top: -13px;
 }
 
-.generalmenu .button-collapse {
-	z-index: 3;
-}
-
-.side-nav {
+.sinhambre-app .sinhambre-menu .side-nav{
 	background-color: black;
 }
 
-.side-nav li {
+.sinhambre-app .sinhambre-menu .side-nav li{
 	width: 100%;
 }
 
-.side-nav a {
+.sinhambre-app .sinhambre-menu .side-nav a{
 	color: white;
 	display: block;
 	height: auto;
 	font-size: 15px;
 	padding: 1em;
 	text-transform: uppercase;
-	margin-top: 20px;
+	margin-top:20px;
 }
 
-.side-nav a:hover {
+.sinhambre-app .sinhambre-menu .side-nav a:hover{
 	background-color: orange;
 }
 
-.side-nav .logo {
+.sinhambre-app .sinhambre-menu .side-nav .logo{
 	width: 128px;
 	height: 128px;
 	position: relative;
 	margin: 0 auto;
 	margin-top: 30px;
-}
+} 
 
-#section1 {
+.sinhambre-app #section1{
 	margin-top: 65px;
 }
 
-.slides li h3 {
+.sinhambre-app .slides li h3{
 	display: inline-block;
 	padding: 15px;
 	text-transform: uppercase;
-	opacity: 0.95;
+	opacity: 0.98;
 }
 
-.slides li h5 {
+.sinhambre-app .slides li h5{
 	width: auto;
 }
 
-.section-text {
+.sinhambre-app .section-text{
 	text-align: center;
 }
 
-.section-text .title {
+.sinhambre-app .section-text .title{
 	text-transform: uppercase;
 }
 
-.section-text .line, .section-text .line span {
+.sinhambre-app .section-text .line, .sinhambre-app .section-text .line span, .sinhambre-app .section-text-responsive .line, .sinhambre-app .section-text-responsive .line span{
 	display: inline-block;
 	clear: both;
 }
 
-.section-text .line span{
+.sinhambre-app .section-text .line span, .sinhambre-app .section-text-responsive .line span{
 	position: relative;
 	height: 2px;
 	background-color: @orange;
-	width: 210px;
 	margin-bottom: 30px;
 }
 
-.section-text .line em {
+.sinhambre-app .section-text .line span{
+	width: 210px;
+}
+
+.sinhambre-app .section-text .line em, .sinhambre-app .section-text-responsive .line em{
 	position: absolute;
 	top: 2px;
-	width: 50px;
 	height: 5px;
 	background-color: @orange;
 	left: 0;
 }
 
-.section-text-responsive {
+.sinhambre-app .section-text .line em{
+	width: 50px;
+}
+
+.sinhambre-app .section-text-responsive{
 	text-align: center;
 }
 
-.section-text-responsive .title {
+.sinhambre-app .section-text-responsive .title{
 	text-transform: uppercase;
 	font-size: 25px;
 }
 
-.section-text-responsive .line, .section-text-responsive .line span {
-	display: inline-block;
-	clear: both;
-}
-
-.section-text-responsive .line span {
-	position: relative;
-	height: 2px;
-	background-color: @orange;
+.sinhambre-app .section-text-responsive .line span{
 	width: 200px;
-	margin-bottom: 30px; 
 }
 
-.section-text-responsive .line em {
-	position: absolute;
-	top: 2px;
+.sinhambre-app .section-text-responsive .line em{
 	width: 40%;
-	height: 5px;
-	background-color: @orange;
-	left: 0;
 }
 
-.slide .buttons {
+.sinhambre-app .slide .buttons {
 	position: absolute;
 	bottom: 20px;
 	text-align: center;
 }
 
-#section3 .service {
+.sinhambre-app #section3 .service{
 	text-align: center;
 }
 
-#section3 .service .text {
-	text-align: center;
+.sinhambre-app #section3 .service .text{
 	color: black;
 }
 
-@media screen and (max-width: 360px){
-	.slides li h3 {
+@media screen only and (max-width: 360px){
+	.sinhambre-app .slides li h3{
 		padding: 10px;
 		font-size: 25px;
 	}
 
-	.slides li h5 {
+	.sinhambre-app .slides li h5{
 		font-size: 18px;
 	}
 }

@@ -1,16 +1,30 @@
-doctype html
-html(lang="es")
-	head
-		title
-			Sin Hambre | Una aplicación que te quita el hambre
-		meta(name="robots" content="noindex,nofollow")
-		meta(charset="utf8")
-		meta(name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0")
-	body
-		h1 Hello - This Works
-		if youAreUsingJade
-			p You are amazing!!
-		else
-			p Get Jade!!
-		p.
-			Jade is one template language strong on performance and other features.
+extends layout
+
+block head
+	title Sin Hambre - una aplicación que te quita el hambre
+		
+	meta(name="robots" content="noindex,nofollow")
+	meta(charset="utf8")
+	meta(name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0")
+
+	link(href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet")
+	link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+
+	link(rel="shorcut icon" href="assets/img/logo.jpg")
+	link(rel="stylesheet" href="assets/libs/materialize/dist/css/materialize.min.css" media="all")
+	link(rel="stylesheet/less" href="assets/libs/app/app.less")
+
+	script(src="assets/libs/less/less.min.js")
+	script(src="assets/libs/jquery/jquery.min.js")
+	script(src="assets/libs/materialize/dist/js/materialize.min.js")
+	script(src="assets/libs/app/app.js")
+
+block body
+	h1 Hello - This Works
+		
+	if youAreUsingJade
+		p You are amazing!!
+	else
+		p Get Jade!!
+	p.
+		Jade is one template language strong on performance and other features.
